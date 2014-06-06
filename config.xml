@@ -16,5 +16,6 @@
     <author href="https://www.daijiworld.com" email="karthik@daijiworld.com">
         Karthik
     </author>
+	<gap:plugin name="com.dawsonloudon.videoplayer" version="1.0.0" />
 
 </widget>
