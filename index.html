@@ -8,31 +8,7 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
 	<script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
-    <script src="cordova.js"></script>
-    <script>
-    	/*-
-		 * cordova VideoPlayer Plugin for Android
-		 *
-		 * Created by Simon MacDonald (2008) MIT Licensed
-		 * Revised for Cordova 3.3+ by Dawson Loudon (2013) MIT Licensed
-		 *
-		 * Usages:
-		 *
-		 * VideoPlayer.play("http://path.to.my/video.mp4");
-		 * VideoPlayer.play("file:///path/to/my/video.mp4");
-		 * VideoPlayer.play("file:///android_asset/www/path/to/my/video.mp4");
-		 * VideoPlayer.play("https://www.youtube.com/watch?v=en_sVVjWFKk");
-		 */
-		
-		var exec = require("cordova/exec");
-		
-		var VideoPlayer = {
-			play: function(url) {
-				exec(null, null, "VideoPlayer", "playVideo", [url]);
-			}
-		};
-		module.exports = VideoPlayer;
-    </script>
+
 </head>
 <body>
 
@@ -45,7 +21,7 @@
 	<div role="main" class="ui-content">
 		<p>
         	<script>
-				VideoPlayer.play("http://www.youtube.com/watch?v=ItC0wPKHW_E");
+            	document.location = "rtsp://live.wmncdn.net/daijiworld24x7/9e8d2ee8ddf0223a8a2c0b78cc58d555.sdp";
             </script>
         </p>
 	</div><!-- /content -->
